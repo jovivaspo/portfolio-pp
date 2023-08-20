@@ -7,11 +7,11 @@ import { YoutubeIcon } from "./Icons/Youtube"
 const menuFooter = [
     {
         text: "Videography",
-        path:"/videograpy"
+        path:"/videography"
     },
     {
-        text: "Photos",
-        path:"/photos"
+        text: "Photography",
+        path:"/photography"
     },
     {
         text: "Weddings",
