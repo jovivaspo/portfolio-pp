@@ -16,6 +16,7 @@ export const router = createBrowserRouter(
       <Route path="/photography" element={<Photography />} />
       <Route path="/about" element={<About />} />
     </Route>
-  )
+  ),
+  {basename: "/portfolio-pp"},
 );
 
