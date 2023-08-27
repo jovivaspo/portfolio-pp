@@ -2,8 +2,8 @@ export const MailIcon = ({ color }: { color: string }) => {
 
   return    <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={28}
-    height={38}
+    width="34"
+    height="34"
     fill="none"
     stroke={color}
     strokeLinecap="round"

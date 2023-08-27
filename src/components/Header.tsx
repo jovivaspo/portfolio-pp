@@ -2,10 +2,11 @@ import { useSizeScreen } from "../hooks/useSizeScreen"
 
 interface HeaderProps{
     image?: string,
-    text?: string
+    text?: string,
+    position: string 
 }
 
-export const Header: React.FC<HeaderProps> = ({image, text}) => {
+export const Header: React.FC<HeaderProps> = ({image, text, position}) => {
   const { size } = useSizeScreen()
   return (
     <header className="relative h-[400px] bg-my-gray">
@@ -16,7 +17,7 @@ export const Header: React.FC<HeaderProps> = ({image, text}) => {
             src={image}
             alt={text}
             style={{
-              objectPosition: size.width > 1024 ? "0px -250px" : "center",
+              objectPosition: size.width > 1024 ? position : "center",
             }}
             className="object-center xl:object-[0px -250px] w-full h-full object-cover z-0"/>
         </div>}

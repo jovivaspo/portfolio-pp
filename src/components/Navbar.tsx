@@ -75,12 +75,12 @@ export const Navbar = () => {
         {menuItems.map((item, index) => {
           if(!item.path){
             return (
-              <li key={index} onClick={handleSubMenu} className="sub-menu relative cursor-pointer text-my-gray hover:text-black">{item.name.toLocaleUpperCase()} 
+              <li key={index} onClick={handleSubMenu} className="text-sm font-semibold sub-menu relative cursor-pointer text-my-gray hover:text-black">{item.name.toLocaleUpperCase()} 
               <ul ref={refSubMenu} className="md:absolute bg-white flex-col gap-4 rounded-md py-2 pr-2  hidden">
                 {
                   subMenuItemsMyWorks.map((item, index) => {
                     return <li key={index}><Link 
-                    className=" text-my-gray p-2 hover:text-black  transition-all" to={item.path}>{item.name.toLocaleUpperCase()}</Link></li>
+                    className="text-sm text-my-gray p-2 hover:text-black  transition-all" to={item.path}>{item.name.toLocaleUpperCase()}</Link></li>
                   })
                 }
               </ul>
@@ -90,7 +90,7 @@ export const Navbar = () => {
           return (
             <li key={index} onClick={handleMenu}>
               <Link
-                className="text-my-gray hover:text-black transition-all"
+                className="text-my-gray text-sm font-semibold hover:text-black transition-all"
                 to={item.path}
               >
                 {item.name.toLocaleUpperCase()}

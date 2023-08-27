@@ -1,8 +1,11 @@
 import { Gallery } from "../components/Gallery";
 import { Header } from "../components/Header";
 import { Slide } from "../components/Slide";
+import { useSizeScreen } from "../hooks/useSizeScreen";
 import { ImageI, VideoI } from "../types/types";
-import  MainImageHeader from "../assets/images/header.jpg"
+import HeaderResize from "../assets/images/headers/header-home-pp-resize.jpg"
+import HeaderOptimized from "../assets/images/headers/header-home-pp-optimized.webp"
+import ImageCardPhotography from "../assets/images/headers/header-photography.webp"
 
 const Items: (VideoI | ImageI)[] = [
   {
@@ -13,7 +16,7 @@ const Items: (VideoI | ImageI)[] = [
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1691231862377-7e55d4e6a2c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    src: ImageCardPhotography,
     text: "Photography",
     link: "photography",
   },
@@ -26,11 +29,17 @@ const Items: (VideoI | ImageI)[] = [
 ];
 
 export const Home = () => {
+  const { size } = useSizeScreen();
+
+
   return (
     <>
       <Header
+      position="0px -250px"
         text="PABLO POCOSTALES"
-        image={MainImageHeader}
+        image={
+          size.width <= 768? HeaderResize : HeaderOptimized
+        }
       />
       <Slide />
       <Gallery items={Items} />
