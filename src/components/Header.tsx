@@ -3,7 +3,7 @@ import { useSizeScreen } from "../hooks/useSizeScreen"
 interface HeaderProps{
     image?: string,
     text?: string,
-    position: string 
+    position?: string 
 }
 
 export const Header: React.FC<HeaderProps> = ({image, text, position}) => {
