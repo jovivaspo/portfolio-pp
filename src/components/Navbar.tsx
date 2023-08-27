@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import Logo from  '../assets/images/logo-.png'
+import { LogoAnimated } from "./LogoAnimated";
+
+
 
 const menuItems = [
   { name: "Home", path: "/" },
@@ -16,6 +18,8 @@ const subMenuItemsMyWorks = [
   { name: "Featured/colab", path: "/colab" },
   
 ];
+
+
 
 export const Navbar = () => {
     const ref = useRef <HTMLUListElement>(null);
@@ -100,7 +104,7 @@ export const Navbar = () => {
         })}
       </ul>
       <div className="h-full flex items-center text-center lg:flex-grow">
-        <img src={Logo} alt="" className="h-[80px] text-center" />
+        <LogoAnimated  />
       </div>
       <button className="md:hidden" onClick={handleMenu}>
         <svg
