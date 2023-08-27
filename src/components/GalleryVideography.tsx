@@ -1,6 +1,7 @@
 import { VideoI } from "../types/types";
 import { VideoItem } from "./VideoItem";
 
+
 const items: VideoI[] = [
   {
     type: "video",
@@ -80,6 +81,7 @@ export const GalleryVideography = () => {
           </div>
         );
       })}
+      
     </div>
   );
 };

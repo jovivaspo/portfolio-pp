@@ -41,7 +41,7 @@ export const VideoItem = (props: VideoItem) => {
     return (
       <Link
         to={link}
-        className={"relative w-full min-h-[260px] md:w-2/3 lg:w-[40%]"}
+        className={"relative w-full m-2 md:m-0 min-h-[260px] md:w-2/3 lg:w-[40%]"}
       >
         <div  className={" w-full h-full"} ref={videoRef}>
           <div className="image__overlay">
@@ -57,7 +57,7 @@ export const VideoItem = (props: VideoItem) => {
     );
   }
   return (
-    <div className={"relative w-full min-h-[260px] h-full"} ref={videoRef}>
+    <div className={"relative m-2 md:m-0 w-full min-h-[260px] h-full"} ref={videoRef}>
       <div className="image__overlay"
       style={{
         backgroundImage: thumbnail ? `url(${thumbnail})` : "",

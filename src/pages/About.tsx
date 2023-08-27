@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react";
 import ImageAbout from "../assets/images/about.jpg";
+import { useSizeScreen } from "../hooks/useSizeScreen";
 const texts = [
   "¡Hola! I am Pablo, coming from Badajoz, a charming city in the western part of Spain, nestled close to the border with Portugal. My enthusiasm for imagery and sound led me to pursue Communication Audiovisual Degree at the University of Extremadura and complete a master's program in Audiovisual Content at the University of Valencia. I have an advanced level of English, basic level in German, and a quite good understanding of Portuguese due to my geographical proximity to the border.",
   " My journey into the professional world commenced early, with me embarking on endeavors at MediaUni, the online television of the University of Valencia, as well as at Canal Extremadura. Here, I had the privilege to partake in live television programs as a camera assistant in the studio. Further along, at ALCOR Extremadura, I took on the roles of both camera operator and video editor for orienteering sports competitions known as Raids.",
@@ -7,7 +9,23 @@ const texts = [
   "The story of my dedication to the field of audiovisual communication, emphasizing my commitment to continuous learning and exploring new opportunities, has been described in this script; to know the storyboard do not hesitate to navigate through this portfolio.",
 ];
 export const About = () => {
+
+  const { size }  = useSizeScreen()
+  const [ height, setheight ] = useState(0)
+
+  useEffect(() => {
+
+    if(size.width <= 768){
+      setheight(size.width/1.5)
+    }else{
+      setheight((size.width/2)/1.5)
+    }
+    
+  }),[size]
+
+
   return (
+    
     <div className="w-full flex flex-col justify-center items-center my-8">
       <div className="my-4">
         <p className="text-center">
@@ -15,8 +33,8 @@ export const About = () => {
         </p>
         <p className="my-4">PABLO POCOSTALES</p>
       </div>
-      <div className="my-4 p-4 w-full md:w-1/2">
-        <img src={ImageAbout} alt="About Pablo Pocostales" />
+      <div className={`my-4 w-full height-[${height}px] md:w-1/2 max-h-[680px] bg-my-gray`}>
+        <img src={ImageAbout} alt="About Pablo Pocostales" className="w-full h-full object-cover"/>
       </div>
       <div className="my-4 p-4 w-full md:w-3/4">
         <p className="text-center my-4">

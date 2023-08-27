@@ -14,7 +14,7 @@ export const ImageItem  = (props: ImageItem) => {
     return (
       <Link
         to={link}
-        className={"relative w-full min-h-[260px] md:w-2/3 lg:w-[40%]"}
+        className={"relative m-2 md:m-0 w-full min-h-[260px] md:w-2/3 lg:w-[40%]"}
       >
         <div className="image__overlay">
           <h3 className="text-4xl text-white font-thin">
@@ -28,7 +28,7 @@ export const ImageItem  = (props: ImageItem) => {
   }
 
   return (
-    <div className={"relative w-full min-h-[260px] md:w-2/3 lg:w-[40%]"}>
+    <div className={"relative m-2 md:m-0 w-full min-h-[260px] md:w-2/3 lg:w-[40%]"}>
       <div className="image__overlay">
         <h3 className="text-4xl text-white font-thin">
           {text?.toLocaleUpperCase()}
