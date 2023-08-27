@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Logo from  '../assets/images/logo-.png'
 
 const menuItems = [
   { name: "Home", path: "/" },
@@ -99,7 +100,7 @@ export const Navbar = () => {
         })}
       </ul>
       <div className="h-full flex items-center text-center lg:flex-grow">
-        <img src="/logo-.png" alt="" className="h-[80px] text-center" />
+        <img src={Logo} alt="" className="h-[80px] text-center" />
       </div>
       <button className="md:hidden" onClick={handleMenu}>
         <svg
