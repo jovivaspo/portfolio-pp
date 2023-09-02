@@ -11,7 +11,7 @@
 	align-items: center;
 	justify-content: center;
 	opacity: 1;
-	transition: opacity 0.35s;
+	transition: opacity 1s;
 	z-index: 9999;
 }
 
@@ -23,7 +23,7 @@
 
 .image__overlay>* {
 	transform: translateY(0);
-	transition: transform 0.35s;
+	transition: transform 0.5s;
 }
 
 .image__overlay:hover {

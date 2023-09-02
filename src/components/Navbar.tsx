@@ -80,7 +80,7 @@ export const Navbar = () => {
           if(!item.path){
             return (
               <li key={index} onClick={handleSubMenu} className="text-sm font-semibold sub-menu relative cursor-pointer text-my-gray hover:text-black">{item.name.toLocaleUpperCase()} 
-              <ul ref={refSubMenu} className="md:absolute bg-white flex-col gap-4 rounded-md py-2 pr-2  hidden">
+              <ul ref={refSubMenu} className="md:absolute bg-white flex-col gap-4 rounded-md py-2 pr-2 z-20  hidden">
                 {
                   subMenuItemsMyWorks.map((item, index) => {
                     return <li key={index}><Link 

@@ -49,9 +49,9 @@ export const VideoItem = (props: VideoItem) => {
               {text?.toLocaleUpperCase()}
             </h3>
           </div>
-          <video muted loop className="w-full h-full object-cover">
+          {<video muted loop className="w-full h-full object-cover">
             <source src={src} type="video/mp4" />
-          </video>
+          </video>}
         </div>
       </Link>
     );

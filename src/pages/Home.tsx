@@ -6,7 +6,6 @@ import { ImageI, VideoI } from "../types/types";
 import HeaderResize from "../assets/images/headers/header-home-pp-resize.jpg"
 import HeaderOptimized from "../assets/images/headers/header-home-pp-optimized.webp"
 import ImageCardPhotography from "../assets/images/headers/header-photography.webp"
-
 const Items: (VideoI | ImageI)[] = [
   {
     type: "video",

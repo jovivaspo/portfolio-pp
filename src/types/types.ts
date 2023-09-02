@@ -14,3 +14,9 @@ export interface ImageI{
   description?: string;
  
 }
+
+export interface VideoRevI {
+  thumbnail: string;
+  component: () => React.ReactNode;
+
+}

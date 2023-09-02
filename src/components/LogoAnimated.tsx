@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
-import Logo from  '../assets/images/logo-.png'
-import LogoAnimation from '../assets/gifs/PP-Paint_1.mp4'
+import Logo from  '../assets/images/PP-logo.png'
+import LogoAnimation from '../assets/animations/PP-Paint_1.mp4'
 
 export const LogoAnimated = () => {
 
@@ -34,7 +34,7 @@ export const LogoAnimated = () => {
   }, [videoRef.current]);
 
      return (
-    <div className={"relative m-2 w-32 p-2"} ref={videoRef}>
+    <div className={"relative m-2 w-[140px]  z-0"} ref={videoRef}>
       <div className="image__overlay w-full"
       style={{
         backgroundImage: `url(${Logo})`,
@@ -46,7 +46,7 @@ export const LogoAnimated = () => {
       >
       </div>
 
-      <video muted loop className="w-full object-cover">
+      <video muted loop className="w-full h-full object-cover">
         <source src={LogoAnimation} type="video/mp4" />
       </video>
     </div>)
