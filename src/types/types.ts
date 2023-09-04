@@ -18,5 +18,7 @@ export interface ImageI{
 export interface VideoRevI {
   thumbnail: string;
   component: () => React.ReactNode;
+  style?: React.CSSProperties;
+  padding?: string;
 
 }

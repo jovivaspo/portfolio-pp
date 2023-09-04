@@ -6,10 +6,12 @@ import { ImageI, VideoI } from "../types/types";
 import HeaderResize from "../assets/images/headers/header-home-pp-resize.jpg"
 import HeaderOptimized from "../assets/images/headers/header-home-pp-optimized.webp"
 import ImageCardPhotography from "../assets/images/headers/header-photography.webp"
+import VideoGallery from '../assets/video/1101398052.mp4'
+
 const Items: (VideoI | ImageI)[] = [
   {
     type: "video",
-    src: "https://cdn.sanity.io/files/8nn8fua5/production/4c749533161fc77c899a376ec6cd6da38973772f.mp4",
+    src: VideoGallery,
     text: "Videography",
     link: "videography",
   },
