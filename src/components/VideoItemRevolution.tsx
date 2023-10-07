@@ -70,7 +70,7 @@ export const VideoItemRevolution: React.FC<Props> = ({
         {<Component />}
       </div>
       <div className="flex flex-col gap-2 mt-2">
-        {title && <p className="font-bold">{title.toUpperCase()}</p>}
+        {title && <p className="font-bold text-sm">{title.toUpperCase()}</p>}
         {subTitle && (
           <p className="text-my-gray italic font-semibold text-sm">
             {subTitle}

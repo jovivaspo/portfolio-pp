@@ -58,7 +58,7 @@ export const Navbar = () => {
                 onMouseEnter={() => setShowSubMenu(true)}
                 onMouseLeave={() => setShowSubMenu(false)}
                 key={index}
-                className=" text-sm font-semibold sub-menu relative cursor-pointer text-my-gray hover:text-black"
+                className=" text-sm  sub-menu relative cursor-pointer text-my-gray hover:text-black"
               >
                 {item.name.toLocaleUpperCase()}
                 {showSubMenu && (
@@ -84,7 +84,7 @@ export const Navbar = () => {
           return (
             <li key={index} onClick={handleMenu}>
               <Link
-                className="text-my-gray text-sm font-semibold hover:text-black transition-all"
+                className="text-my-gray text-sm  hover:text-black transition-all"
                 to={item.path}
               >
                 {item.name.toLocaleUpperCase()}
