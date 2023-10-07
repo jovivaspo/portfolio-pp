@@ -69,6 +69,7 @@ export const Navbar = () => {
                           <Link
                             className="text-xs p-2 text-my-gray md:text-white hover:opacity-50 transition-all"
                             to={item.path}
+                            onClick={handleMenu}
                           >
                             {item.name.toLocaleUpperCase()}
                           </Link>
