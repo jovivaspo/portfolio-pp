@@ -1,8 +1,20 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { VideoRevI } from "../types/types";
 import { IframeVimeo } from "./IframeVimeo";
 import IframeYoutube from "./IframeYoutube";
 import { VideoItemRevolution } from "./VideoItemRevolution";
+import Cover1 from "../assets/images/cover-videos/01.png";
+import Cover2 from "../assets/images/cover-videos/02.png";
+import Cover3 from "../assets/images/cover-videos/03.png";
+import Cover4 from "../assets/images/cover-videos/04.png";
+import Cover5 from "../assets/images/cover-videos/05.png";
+import Cover6 from "../assets/images/cover-videos/06.png";
+import Cover7 from "../assets/images/cover-videos/07.png";
+import Cover8 from "../assets/images/cover-videos/08.png";
+import Cover9 from "../assets/images/cover-videos/09.png";
+//import Cover10 from "../assets/images/cover-videos/10.png";
+import Cover11 from "../assets/images/cover-videos/11.png";
+
 const items: VideoRevI[] = [
   {
     component: () => (
@@ -14,9 +26,9 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-     
+    thumbnail: Cover1,
+    title: "Título Video",
+    subTitle: "Subtitle",
   },
   {
     component: () => (
@@ -28,8 +40,10 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover2,
   },
   {
     component: () => (
@@ -41,8 +55,10 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover3,
   },
 
   {
@@ -55,24 +71,23 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover4,
   },
   {
     component: () => (
       <div className="w-full h-full">
         <IframeYoutube
           src={"https://www.youtube.com/embed/QgY0KZwVNcE?si=4pxepcg1nYUb9vP4"}
-           padding= '125%'
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      style: {
-        gridRow: 'span 2'
-      },
-     
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover9,
   },
   {
     component: () => (
@@ -82,19 +97,23 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover5,
   },
   {
     component: () => (
       <div className="w-full h-full">
-        <IframeYoutube
-          src={"https://www.youtube.com/embed/JXWs21vrlL4?si=77d-TyfoN35HbMTo"}
+        <IframeVimeo
+          src={"https://player.vimeo.com/video/858430889?h=bd3e407bc6"}
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover11,
   },
   {
     component: () => (
@@ -104,9 +123,10 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-       
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover6,
   },
   {
     component: () => (
@@ -116,8 +136,10 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover7,
   },
   {
     component: () => (
@@ -127,33 +149,29 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail:
-      "https://images.unsplash.com/photo-1691358246149-49d63a1d730f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    title: "Título Video",
+    subTitle: "Subtitle",
+
+    thumbnail: Cover8,
   },
 ];
 
 export const GalleryVideography = () => {
   const [videoSelect, setVideoSelect] = useState(-1);
 
-
-
   return (
-    <div
-      style={{ gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
-      aspectRatio: "16/9",
-      gridAutoFlow: 'dense',
-    }}
-      className="mx-auto grid gap-4 m-36 w-[90%] lg:w-[80%]"
-    >
+    <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 md:gap-24 mt-36 mb-32 w-[90%] lg:w-[80%] justify-center">
       {items.map((item, index) => {
         return (
-          <div key={index} className="w-full h-full" style={item.style}>
+          <div key={index} className="w-full " style={item.style}>
             <VideoItemRevolution
               component={item.component}
               thumbnail={item.thumbnail}
               index={index}
               videoSelect={videoSelect}
               setVideoSelect={setVideoSelect}
+              title={item.title}
+              subTitle={item.subTitle}
             />
           </div>
         );

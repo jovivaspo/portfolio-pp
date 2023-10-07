@@ -1,53 +1,75 @@
-import { useEffect, useRef } from "react";
-import Logo from  '../assets/images/PP-logo.png'
-import LogoAnimation from '../assets/animations/PP-Paint_1.mp4'
+import { useEffect, useRef, useState } from "react";
+import Logo from "../assets/images/PP-logo.png";
+import LogoAnimationPaint from "../assets/animations/PP-Paint_1.mp4";
+import LogoAnimationBubbles from "../assets/animations/PP-Bubbles_1.mp4";
+import LogoAnimationWatter from "../assets/animations/PP_ColorWater_1.mp4";
+
+const listOfVideos = [
+  LogoAnimationWatter,
+  LogoAnimationPaint,
+  LogoAnimationBubbles,
+];
 
 export const LogoAnimated = () => {
-
-
-    const videoRef: React.RefObject<HTMLDivElement> = useRef(null);
+  const [videosIndex, setVideoIndex] = useState(0);
+  const [video, setVideo] = useState(listOfVideos[videosIndex]);
 
   useEffect(() => {
+    setVideo(listOfVideos[videosIndex]);
+  }, [videosIndex]);
+
+  const videoRef: React.RefObject<HTMLDivElement> = useRef(null);
+
+  const playVideo = () => {
     if (!videoRef.current) return;
-    const $video = videoRef.current.querySelector("video");
+    const $video = videoRef?.current.querySelector("video");
 
     if (!$video) return;
+    if ($video) {
+      $video.play();
+    }
+  };
 
-    const playVideo = () => {
-      if ($video) {
-        $video.play();
-      }
-    };
-    const resetVideo = () => {
-      if ($video) {
-        $video.pause();
-        $video.currentTime = 0;
-      }
-    };
-    videoRef.current?.addEventListener("mouseover", playVideo);
-    videoRef.current?.addEventListener("mouseout", resetVideo);
+  const resetVideo = () => {
+    if (!videoRef.current) return;
+    const $video = videoRef?.current.querySelector("video");
+    if ($video) {
+      $video.pause();
+      $video.currentTime = 0;
+      console.log("índice: ", videosIndex);
+      setVideoIndex(
+        videosIndex === listOfVideos.length - 1 ? 0 : videosIndex + 1
+      );
+    }
+  };
 
-    return () => {
-      videoRef.current?.removeEventListener("mouseenter", playVideo);
-      videoRef.current?.removeEventListener("mouseleave", resetVideo);
-    };
-  }, [videoRef.current]);
+  console.log(videosIndex);
+  return (
+    <div
+      className={"relative m-2 w-[140px]  z-0"}
+      ref={videoRef}
+      onMouseEnter={() => playVideo()}
+      onMouseLeave={() => resetVideo()}
+    >
+      <div
+        className="image__overlay w-full"
+        style={{
+          backgroundImage: `url(${Logo})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "transparent",
+        }}
+      ></div>
 
-     return (
-    <div className={"relative m-2 w-[140px]  z-0"} ref={videoRef}>
-      <div className="image__overlay w-full"
-      style={{
-        backgroundImage: `url(${Logo})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundColor: "transparent",
-      }}
+      <video
+        muted
+        loop
+        className="w-full h-full object-cover"
+        key={videosIndex}
       >
-      </div>
-
-      <video muted loop className="w-full h-full object-cover">
-        <source src={LogoAnimation} type="video/mp4" />
+        {video && <source src={video} type="video/mp4" />}
       </video>
-    </div>)
-}
+    </div>
+  );
+};

@@ -1,8 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { LogoAnimated } from "./LogoAnimated";
-
-
 
 const menuItems = [
   { name: "Home", path: "/" },
@@ -15,50 +13,27 @@ const menuItems = [
 const subMenuItemsMyWorks = [
   { name: "Photography", path: "photography" },
   { name: "Videography", path: "videography" },
-  { name: "Featured/colab", path: "/colab" },
-  
+  { name: "Featured/colab", path: "colab" },
 ];
 
-
-
 export const Navbar = () => {
-    const ref = useRef <HTMLUListElement>(null);
-    const refSubMenu = useRef <HTMLUListElement>(null);
+  const [showSubMenu, setShowSubMenu] = useState(false);
+  const ref = useRef<HTMLUListElement>(null);
 
-    const handleMenu = () => {
-      ref.current?.classList.toggle("translate-x-0");
-    }
-
-    const handleSubMenu = () => {
-      if(refSubMenu.current?.classList.contains("hidden")) {
-        refSubMenu.current?.classList.remove("hidden");
-       refSubMenu.current?.classList.add("flex");
-      }else{
-      refSubMenu.current?.classList.remove("flex");
-        refSubMenu.current?.classList.add("hidden");
-      }
-    }
-
-    useEffect(()=>{
-      const handlerClick = (e: MouseEvent) => {
-        const targetElement = e.target as HTMLElement;
-        if(ref.current?.classList.contains("hidden") || targetElement.classList.contains("sub-menu")) return
-          
-        if(refSubMenu.current?.classList.contains("flex")) {
-          refSubMenu.current?.classList.add("hidden");
-        }}
-
-        document.addEventListener("click", handlerClick);
-        return () => {
-          document.removeEventListener("click", handlerClick);
-        }
-      
-    },[]) 
+  const handleMenu = () => {
+    ref.current?.classList.toggle("translate-x-0");
+  };
 
   return (
     <nav className="w-full h-[180px] bg-white flex items-center justify-between p-[20px] ">
-      <ul ref={ref} className="flex flex-col w-screen h-screen fixed top-0 left-0 p-10 -translate-x-full transition-transform bg-white z-50 md:translate-x-0 md:relative md:flex-row md:h-full lg:w-[calc(50%-40px)] md:items-center gap-5 pl-10">
-        <button className="md:hidden absolute top-5 right-5" onClick={handleMenu}>
+      <ul
+        ref={ref}
+        className="flex flex-col w-screen h-screen fixed top-0 left-0 p-10 -translate-x-full transition-transform bg-white z-50 md:translate-x-0 md:relative md:flex-row md:h-full lg:w-[calc(50%-40px)] md:items-center gap-5 pl-10"
+      >
+        <button
+          className="md:hidden absolute top-5 right-5"
+          onClick={handleMenu}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-x"
@@ -77,19 +52,33 @@ export const Navbar = () => {
           </svg>
         </button>
         {menuItems.map((item, index) => {
-          if(!item.path){
+          if (!item.path) {
             return (
-              <li key={index} onClick={handleSubMenu} className="text-sm font-semibold sub-menu relative cursor-pointer text-my-gray hover:text-black">{item.name.toLocaleUpperCase()} 
-              <ul ref={refSubMenu} className="md:absolute bg-white flex-col gap-4 rounded-md py-2 pr-2 z-20  hidden">
-                {
-                  subMenuItemsMyWorks.map((item, index) => {
-                    return <li key={index}><Link 
-                    className="text-sm text-my-gray p-2 hover:text-black  transition-all" to={item.path}>{item.name.toLocaleUpperCase()}</Link></li>
-                  })
-                }
-              </ul>
+              <li
+                onMouseEnter={() => setShowSubMenu(true)}
+                onMouseLeave={() => setShowSubMenu(false)}
+                key={index}
+                className=" text-sm font-semibold sub-menu relative cursor-pointer text-my-gray hover:text-black"
+              >
+                {item.name.toLocaleUpperCase()}
+                {showSubMenu && (
+                  <ul className="md:absolute bg-white md:bg-my-gray opacity-90 flex-col gap-4 rounded-md py-2 px-2 z-20 md:animate-fade-up md:animate-once md:animate-duration-300 md:animate-delay-100 md:animate-ease-linear md:animate-fill-backwards">
+                    {subMenuItemsMyWorks.map((item, index) => {
+                      return (
+                        <li key={index} className="p-2">
+                          <Link
+                            className="text-xs p-2 text-my-gray md:text-white hover:opacity-50 transition-all"
+                            to={item.path}
+                          >
+                            {item.name.toLocaleUpperCase()}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
               </li>
-            )
+            );
           }
           return (
             <li key={index} onClick={handleMenu}>
@@ -104,7 +93,7 @@ export const Navbar = () => {
         })}
       </ul>
       <div className="h-full flex items-center text-center lg:flex-grow">
-        <LogoAnimated  />
+        <LogoAnimated />
       </div>
       <button className="md:hidden" onClick={handleMenu}>
         <svg

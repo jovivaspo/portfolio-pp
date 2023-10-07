@@ -12,9 +12,11 @@ export const IframeVimeo: React.FC<Props> = ({ src }) => {
           height: 0,
           overflow: "hidden",
           maxWidth: "100%",
+          background: "#000",
         }}
       >
         <iframe
+          loading="lazy"
           src={src}
           style={{
             position: "absolute",

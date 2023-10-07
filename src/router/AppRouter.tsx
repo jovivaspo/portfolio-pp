@@ -1,12 +1,14 @@
 import {
   Route,
-  createBrowserRouter, createRoutesFromElements,
+  createBrowserRouter,
+  createRoutesFromElements,
 } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Layout } from "../components/Layout";
 import { Videography } from "../pages/Videography";
 import { About } from "../pages/About";
 import { Photography } from "../pages/Photography";
+import { Colab } from "../pages/Colab";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,9 +16,10 @@ export const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/videography" element={<Videography />} />
       <Route path="/photography" element={<Photography />} />
+      <Route path="/colab" element={<Colab />} />
+
       <Route path="/about" element={<About />} />
     </Route>
   ),
-  {basename: "/portfolio-pp"},
+  { basename: "/portfolio-pp" }
 );
-

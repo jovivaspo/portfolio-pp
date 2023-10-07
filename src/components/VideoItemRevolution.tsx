@@ -7,6 +7,8 @@ interface Props {
   index: number;
   videoSelect: number;
   setVideoSelect: React.Dispatch<React.SetStateAction<number>>;
+  title?: string;
+  subTitle?: string;
 }
 export const VideoItemRevolution: React.FC<Props> = ({
   component,
@@ -14,6 +16,8 @@ export const VideoItemRevolution: React.FC<Props> = ({
   index,
   videoSelect,
   setVideoSelect,
+  title,
+  subTitle,
 }) => {
   const Component = component;
   const refIconContainer: React.RefObject<HTMLSpanElement> = useRef(null);
@@ -23,29 +27,25 @@ export const VideoItemRevolution: React.FC<Props> = ({
   useEffect(() => {
     if (videoSelect === -1) return;
     if (videoSelect !== index) {
-          console.log(videoSelect, index);
-
-      
+      console.log(videoSelect, index);
 
       refImg.current?.classList.remove("hidden");
       setTimeout(() => {
         refImg.current?.classList.remove("opacity-0");
-
       }, 600);
       setTimeout(() => {
         refIconContainer.current?.classList.remove("hidden");
-                const $iframe = refContainer.current?.querySelector("iframe");
+        const $iframe = refContainer.current?.querySelector("iframe");
 
-      const src = $iframe?.src
+        const src = $iframe?.src;
 
-
-      if(src)  $iframe?.setAttribute("src", src)
+        if (src) $iframe?.setAttribute("src", src);
       }, 1000);
     }
   }, [videoSelect]);
 
   return (
-    <div ref={refContainer} className="min-w-[340px] h-full">
+    <div ref={refContainer} className="min-w-[340px]">
       <div className="w-full h-full relative ">
         <img
           ref={refImg}
@@ -63,11 +63,19 @@ export const VideoItemRevolution: React.FC<Props> = ({
               setVideoSelect(index);
             }, 800);
           }}
-          className=" absolute top-0 w-full h-full flex justify-center items-center cursor-pointer  z-30"
+          className="absolute top-0 w-full h-full flex justify-center items-center cursor-pointer  z-30"
         >
           <PlayIcon color="white" />"
         </span>
         {<Component />}
+      </div>
+      <div className="flex flex-col gap-2 mt-2">
+        {title && <p className="font-bold">{title.toUpperCase()}</p>}
+        {subTitle && (
+          <p className="text-my-gray italic font-semibold text-sm">
+            {subTitle}
+          </p>
+        )}
       </div>
     </div>
   );

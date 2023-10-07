@@ -20,5 +20,6 @@ export interface VideoRevI {
   component: () => React.ReactNode;
   style?: React.CSSProperties;
   padding?: string;
-
+  title?: string,
+  subTitle?: string
 }
