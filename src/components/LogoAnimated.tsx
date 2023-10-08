@@ -4,7 +4,7 @@ import LogoAnimationPaint from "../assets/animations/PP-Paint_1.mp4";
 import LogoAnimationBubbles from "../assets/animations/PP-Bubbles_1.mp4";
 import LogoAnimationWatter from "../assets/animations/PP_ColorWater_1.mp4";
 import useIsMobile from "../hooks/useMobile";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const listOfVideos = [
   LogoAnimationWatter,
@@ -17,7 +17,6 @@ export const LogoAnimated = () => {
   const [video, setVideo] = useState(listOfVideos[videosIndex]);
   const isMobile = useIsMobile();
   const videoRef: React.RefObject<HTMLDivElement> = useRef(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     //Change video to change index of the list
