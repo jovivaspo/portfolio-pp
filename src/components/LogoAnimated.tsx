@@ -4,6 +4,7 @@ import LogoAnimationPaint from "../assets/animations/PP-Paint_1.mp4";
 import LogoAnimationBubbles from "../assets/animations/PP-Bubbles_1.mp4";
 import LogoAnimationWatter from "../assets/animations/PP_ColorWater_1.mp4";
 import useIsMobile from "../hooks/useMobile";
+import { Link, useNavigate } from "react-router-dom";
 
 const listOfVideos = [
   LogoAnimationWatter,
@@ -16,6 +17,7 @@ export const LogoAnimated = () => {
   const [video, setVideo] = useState(listOfVideos[videosIndex]);
   const isMobile = useIsMobile();
   const videoRef: React.RefObject<HTMLDivElement> = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     //Change video to change index of the list
@@ -55,31 +57,15 @@ export const LogoAnimated = () => {
     }
   };
 
-  const handleClickMobile = () => {
-    if (!isMobile || !videoRef.current) return;
-
-    const $video = videoRef?.current.querySelector("video");
-
-    if ($video && $video.paused) {
-      return $video.play();
-    }
-
-    if ($video && !$video.paused) {
-      $video.pause();
-    }
-  };
-
-  const handlerEndedMobile = () => {
-    if (!videoRef.current) return;
-    const $video = videoRef?.current.querySelector("video");
-    if ($video && $video.ended) {
-      $video.pause();
-      $video.currentTime = 0;
-      setVideoIndex(
-        videosIndex === listOfVideos.length - 1 ? 0 : videosIndex + 1
-      );
-    }
-  };
+  if (isMobile) {
+    return (
+      <div className={"relative m-2 w-[140px] z-0 overflow-hidden ml-[11px]"}>
+        <Link to="/">
+          <img src={Logo} alt="Logo" />
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -87,7 +73,6 @@ export const LogoAnimated = () => {
       ref={videoRef}
       onMouseEnter={() => playVideoDesktop()}
       onMouseLeave={() => resetVideoDesktop()}
-      onClick={() => handleClickMobile()}
     >
       <div
         className="image__overlay w-full"
@@ -100,12 +85,7 @@ export const LogoAnimated = () => {
         }}
       ></div>
 
-      <video
-        muted
-        className="w-full h-full object-cover"
-        key={videosIndex}
-        onEnded={handlerEndedMobile}
-      >
+      <video muted className="w-full h-full object-cover" key={videosIndex}>
         {video && <source src={video} type="video/mp4" />}
       </video>
     </div>
