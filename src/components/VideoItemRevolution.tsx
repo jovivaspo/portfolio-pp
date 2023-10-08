@@ -48,6 +48,7 @@ export const VideoItemRevolution: React.FC<Props> = ({
     <div ref={refContainer} className="min-w-[340px]">
       <div className="w-full h-full relative ">
         <img
+          loading="lazy"
           ref={refImg}
           src={thumbnail}
           className="w-full h-full object-cover transition-opacity duration-1000 absolute top-0 left-0 z-20"

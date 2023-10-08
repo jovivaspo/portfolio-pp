@@ -25,7 +25,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="w-full h-[180px] bg-white flex items-center justify-between p-[20px] ">
+    <nav className="w-full h-[180px] bg-white flex items-center justify-between p-[20px] pr-[40px] md:pr-[20px]">
       <ul
         ref={ref}
         className="flex flex-col w-screen h-screen fixed top-0 left-0 p-10 -translate-x-full transition-transform bg-white z-50 md:translate-x-0 md:relative md:flex-row md:h-full lg:w-[calc(50%-40px)] md:items-center gap-5 pl-10"

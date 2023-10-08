@@ -13,8 +13,8 @@ const menuFooter = [
     path: "/photography",
   },
   {
-    text: "Weddings",
-    path: "/weddings",
+    text: "Featured/Colab",
+    path: "/colab",
   },
 ];
 

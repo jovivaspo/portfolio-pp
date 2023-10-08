@@ -3,17 +3,6 @@ import { VideoRevI } from "../types/types";
 import { IframeVimeo } from "./IframeVimeo";
 import IframeYoutube from "./IframeYoutube";
 import { VideoItemRevolution } from "./VideoItemRevolution";
-import Cover1 from "../assets/images/cover-videos/01.png";
-import Cover2 from "../assets/images/cover-videos/02.png";
-import Cover3 from "../assets/images/cover-videos/03.png";
-import Cover4 from "../assets/images/cover-videos/04.png";
-import Cover5 from "../assets/images/cover-videos/05.png";
-import Cover6 from "../assets/images/cover-videos/06.png";
-import Cover7 from "../assets/images/cover-videos/07.png";
-import Cover8 from "../assets/images/cover-videos/08.png";
-import Cover9 from "../assets/images/cover-videos/09.png";
-//import Cover10 from "../assets/images/cover-videos/10.png";
-import Cover11 from "../assets/images/cover-videos/11.png";
 
 const items: VideoRevI[] = [
   {
@@ -26,7 +15,8 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    thumbnail: Cover1,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751558/portafolio-pp/01_fne6tt.png",
     title: "Título Video",
     subTitle: "Subtitle",
   },
@@ -43,7 +33,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover2,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/02_rtgolx.png",
   },
   {
     component: () => (
@@ -58,7 +49,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover3,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/03_aswhk6.png",
   },
 
   {
@@ -74,7 +66,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover4,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/04_ldq8vi.png",
   },
   {
     component: () => (
@@ -87,7 +80,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover9,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751561/portafolio-pp/09_nb1nvm.png",
   },
   {
     component: () => (
@@ -100,7 +94,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover5,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/05_gcpzpl.png",
   },
   {
     component: () => (
@@ -113,7 +108,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover11,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751562/portafolio-pp/11_nvbzbd.png",
   },
   {
     component: () => (
@@ -126,7 +122,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover6,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751560/portafolio-pp/06_fvhf3z.png",
   },
   {
     component: () => (
@@ -139,7 +136,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover7,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751560/portafolio-pp/07_ydzyof.png",
   },
   {
     component: () => (
@@ -152,7 +150,8 @@ const items: VideoRevI[] = [
     title: "Título Video",
     subTitle: "Subtitle",
 
-    thumbnail: Cover8,
+    thumbnail:
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751562/portafolio-pp/10_vj7sgp.png",
   },
 ];
 
