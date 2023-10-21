@@ -9,6 +9,7 @@ import { Videography } from "../pages/Videography";
 import { About } from "../pages/About";
 import { Photography } from "../pages/Photography";
 import { Colab } from "../pages/Colab";
+import { Contact } from "../pages/Contact";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,7 +18,7 @@ export const router = createBrowserRouter(
       <Route path="/videography" element={<Videography />} />
       <Route path="/photography" element={<Photography />} />
       <Route path="/colab" element={<Colab />} />
-
+      <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
     </Route>
   ),

@@ -17,6 +17,8 @@ export const LogoAnimated = () => {
   const [video, setVideo] = useState(listOfVideos[videosIndex]);
   const isMobile = useIsMobile();
   const videoRef: React.RefObject<HTMLDivElement> = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [mouseOut, setMouseOut] = useState(true);
 
   useEffect(() => {
     //Change video to change index of the list
@@ -24,13 +26,8 @@ export const LogoAnimated = () => {
   }, [videosIndex]);
 
   useEffect(() => {
-    if (!videoRef.current || !isMobile) return;
-    //Play the video whent this has changed on mobile
-    const $video = videoRef?.current.querySelector("video");
-
-    if (!$video) return;
-    if ($video) {
-      $video.play();
+    if (isPlaying || !mouseOut) {
+      playVideoDesktop();
     }
   }, [video]);
 
@@ -38,13 +35,26 @@ export const LogoAnimated = () => {
     if (!videoRef.current || isMobile) return;
     const $video = videoRef?.current.querySelector("video");
 
-    if (!$video) return;
-    if ($video) {
-      $video.play();
-    }
+    if (!$video || isPlaying) return;
+    setMouseOut(false);
+    $video.play();
+    setIsPlaying(true);
   };
 
-  const resetVideoDesktop = () => {
+  useEffect(() => {
+    if (!videoRef.current || isMobile) return;
+    const $video = videoRef?.current.querySelector("video");
+
+    if (!$video) return;
+    $video.addEventListener("ended", () => {
+      setVideoIndex(
+        videosIndex === listOfVideos.length - 1 ? 0 : videosIndex + 1
+      );
+      setIsPlaying(false);
+    });
+  }, [video]);
+
+  /*const resetVideoDesktop = () => {
     if (!videoRef.current || isMobile) return;
     const $video = videoRef?.current.querySelector("video");
     if ($video) {
@@ -54,7 +64,7 @@ export const LogoAnimated = () => {
         videosIndex === listOfVideos.length - 1 ? 0 : videosIndex + 1
       );
     }
-  };
+  };*/
 
   if (isMobile) {
     return (
@@ -71,7 +81,7 @@ export const LogoAnimated = () => {
       className={"relative m-2 w-[140px] z-0 overflow-hidden ml-[11px]"}
       ref={videoRef}
       onMouseEnter={() => playVideoDesktop()}
-      onMouseLeave={() => resetVideoDesktop()}
+      onMouseLeave={() => setMouseOut(true)}
     >
       <div
         className="image__overlay w-full"

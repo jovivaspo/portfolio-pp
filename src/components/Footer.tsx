@@ -55,7 +55,7 @@ export const Footer = () => {
           return (
             <li key={index}>
               <Link
-                className="text-sm font-semibold sub-menu relative cursor-pointer text-my-gray hover:text-black"
+                className="text-sm  sub-menu relative cursor-pointer text-my-gray hover:text-black"
                 to={item.path}
               >
                 {item.text.toLocaleUpperCase()}

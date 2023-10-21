@@ -6,7 +6,10 @@ const menuItems = [
   { name: "Home", path: "/" },
   { name: "My Work", path: "" },
   { name: "Who I am", path: "/about" },
-  { name: "My Gear", path: "/my-gear" },
+  {
+    name: "My Gear",
+    path: "https://kit.co/pablopocostales/my-filming-equipment",
+  },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -62,8 +65,21 @@ export const Navbar = () => {
               >
                 {item.name.toLocaleUpperCase()}
                 {showSubMenu && (
-                  <ul className="md:absolute bg-white md:bg-my-gray opacity-90 flex-col gap-4 rounded-md py-2 px-2 z-20 md:animate-fade-up md:animate-once md:animate-duration-300 md:animate-delay-100 md:animate-ease-linear md:animate-fill-backwards">
+                  <ul className="md:absolute bg-white md:bg-my-gray opacity-90 flex-col gap-4 rounded-md py-2 px-2 z-20 md:animate-fade-up md:animate-once md:animate-duration-150 md:animate-delay-100 md:animate-ease-linear md:animate-fill-backwards">
                     {subMenuItemsMyWorks.map((item, index) => {
+                      if (item.name === "My Gear") {
+                        return (
+                          <a
+                            target="_blank"
+                            href={item.path}
+                            rel="noreferrer"
+                            key={index}
+                          >
+                            {" "}
+                            {item.name.toLocaleUpperCase()}
+                          </a>
+                        );
+                      }
                       return (
                         <li key={index} className="p-2">
                           <Link
