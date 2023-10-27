@@ -3,10 +3,10 @@ import { Header } from "../components/Header";
 import { Slide } from "../components/Slide";
 import { useSizeScreen } from "../hooks/useSizeScreen";
 import { ImageI, VideoI } from "../types/types";
-import HeaderResize from "../assets/images/headers/header-home-pp-resize.jpg"
-import HeaderOptimized from "../assets/images/headers/header-home-pp-optimized.webp"
-import ImageCardPhotography from "../assets/images/headers/header-photography.webp"
-import VideoGallery from '../assets/video/1101398052.mp4'
+import HeaderResize from "../assets/images/headers/header-home-pp-resize.jpg";
+import HeaderOptimized from "../assets/images/headers/header-home-pp-optimized.webp";
+import ImageCardPhotography from "../assets/images/headers/header-photography.webp";
+import VideoGallery from "../assets/video/1101398052.mp4";
 
 const Items: (VideoI | ImageI)[] = [
   {
@@ -32,15 +32,12 @@ const Items: (VideoI | ImageI)[] = [
 export const Home = () => {
   const { size } = useSizeScreen();
 
-
   return (
     <>
       <Header
-      position="0px -250px"
-        text="PABLO POCOSTALES"
-        image={
-          size.width <= 768? HeaderResize : HeaderOptimized
-        }
+        position="0px -250px"
+        text="PABLO POCOSTALESsssss"
+        image={size.width <= 768 ? HeaderResize : HeaderOptimized}
       />
       <Slide />
       <Gallery items={Items} />
