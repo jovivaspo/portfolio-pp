@@ -17,8 +17,7 @@ const items: VideoRevI[] = [
     ),
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751558/portafolio-pp/01_fne6tt.png",
-    title: "Título Video",
-    subTitle: "Subtitle",
+    title: "Spot paint effect - After Effects",
   },
   {
     component: () => (
@@ -30,27 +29,10 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    title: "Título Video",
-    subTitle: "Subtitle",
+    title: "Stylish Presentation of an App Using 3D Max and After Effects",
 
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/02_rtgolx.png",
-  },
-  {
-    component: () => (
-      <div className="w-full h-full">
-        <IframeVimeo
-          src={
-            "https://player.vimeo.com/video/199917900?h=d43ccf5db7&byline=0&portrait=0"
-          }
-        />
-      </div>
-    ),
-    title: "Título Video",
-    subTitle: "Subtitle",
-
-    thumbnail:
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/03_aswhk6.png",
   },
 
   {
@@ -63,8 +45,7 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    title: "Título Video",
-    subTitle: "Subtitle",
+    title: "Promo - Portal7",
 
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/04_ldq8vi.png",
@@ -77,8 +58,7 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    title: "Título Video",
-    subTitle: "Subtitle",
+    title: "Boda - Beatriz&JuanJo2019",
 
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751561/portafolio-pp/09_nb1nvm.png",
@@ -91,25 +71,11 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    title: "Título Video",
-    subTitle: "Subtitle",
+    title:
+      "Selección Española - Eurocopa Balonmano Femenino Sub-17, Macedonia 2015",
 
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/05_gcpzpl.png",
-  },
-  {
-    component: () => (
-      <div className="w-full h-full">
-        <IframeVimeo
-          src={"https://player.vimeo.com/video/858430889?h=bd3e407bc6"}
-        />
-      </div>
-    ),
-    title: "Título Video",
-    subTitle: "Subtitle",
-
-    thumbnail:
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751562/portafolio-pp/11_nvbzbd.png",
   },
   {
     component: () => (
@@ -119,39 +85,10 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    title: "Título Video",
-    subTitle: "Subtitle",
+    title: "Motion Design - Logo Neon design",
 
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751560/portafolio-pp/06_fvhf3z.png",
-  },
-  {
-    component: () => (
-      <div className="w-full h-full">
-        <IframeYoutube
-          src={"https://www.youtube.com/embed/dztwM69ygeU?si=Mq9sr0TlDpgq0vhG"}
-        />
-      </div>
-    ),
-    title: "Título Video",
-    subTitle: "Subtitle",
-
-    thumbnail:
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751560/portafolio-pp/07_ydzyof.png",
-  },
-  {
-    component: () => (
-      <div className="w-full h-full">
-        <IframeYoutube
-          src={"https://www.youtube.com/embed/kIxkspQbknU?si=GAp9Bf9IkOtpNGD5"}
-        />
-      </div>
-    ),
-    title: "Título Video",
-    subTitle: "Subtitle",
-
-    thumbnail:
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751562/portafolio-pp/10_vj7sgp.png",
   },
 ];
 
@@ -159,7 +96,7 @@ export const GalleryVideography = () => {
   const [videoSelect, setVideoSelect] = useState(-1);
 
   return (
-    <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 md:gap-24 mt-36 mb-32 w-[90%] lg:w-[80%] justify-center">
+    <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 md:gap-24 mt-36 w-[90%] lg:w-[80%] justify-center">
       {items.map((item, index) => {
         return (
           <div key={index} className="w-full " style={item.style}>

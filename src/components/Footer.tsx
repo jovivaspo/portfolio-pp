@@ -5,6 +5,10 @@ import Flicker from "../assets/images/social-media/flickr.png";
 
 const menuFooter = [
   {
+    text: "Home",
+    path: "/",
+  },
+  {
     text: "Videography",
     path: "/videography",
   },
@@ -13,8 +17,12 @@ const menuFooter = [
     path: "/photography",
   },
   {
-    text: "Featured/Colab",
+    text: "Feat-Collaboration",
     path: "/colab",
+  },
+  {
+    text: "Designs",
+    path: "/designs",
   },
 ];
 

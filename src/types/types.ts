@@ -23,3 +23,5 @@ export interface VideoRevI {
   title?: string,
   subTitle?: string
 }
+
+export type Block = string[]

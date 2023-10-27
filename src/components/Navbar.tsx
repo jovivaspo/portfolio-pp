@@ -16,7 +16,8 @@ const menuItems = [
 const subMenuItemsMyWorks = [
   { name: "Photography", path: "photography" },
   { name: "Videography", path: "videography" },
-  { name: "Featured/colab", path: "colab" },
+  { name: "Feat/Colab", path: "colab" },
+  { name: "Designs", path: "designs" },
 ];
 
 export const Navbar = () => {
@@ -67,22 +68,10 @@ export const Navbar = () => {
                 {showSubMenu && (
                   <ul className="md:absolute bg-white md:bg-my-gray opacity-90 flex-col gap-4 rounded-md py-2 px-2 z-20 md:animate-fade-up md:animate-once md:animate-duration-150 md:animate-delay-100 md:animate-ease-linear md:animate-fill-backwards">
                     {subMenuItemsMyWorks.map((item, index) => {
-                      if (item.name === "My Gear") {
-                        return (
-                          <a
-                            target="_blank"
-                            href={item.path}
-                            rel="noreferrer"
-                            key={index}
-                          >
-                            {" "}
-                            {item.name.toLocaleUpperCase()}
-                          </a>
-                        );
-                      }
                       return (
                         <li key={index} className="p-2">
                           <Link
+                            target="_blank"
                             className="text-xs p-2 text-my-gray md:text-white hover:opacity-50 transition-all"
                             to={item.path}
                             onClick={handleMenu}
@@ -94,6 +83,19 @@ export const Navbar = () => {
                     })}
                   </ul>
                 )}
+              </li>
+            );
+          }
+          if (item.name === "My Gear") {
+            return (
+              <li key={index} onClick={handleMenu}>
+                <a
+                  className="text-my-gray text-sm  hover:text-black transition-all"
+                  href={item.path}
+                  target="_blank"
+                >
+                  {item.name.toLocaleUpperCase()}
+                </a>
               </li>
             );
           }
