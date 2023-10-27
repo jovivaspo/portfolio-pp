@@ -14,7 +14,7 @@ export const GalleryWithSlide: React.FC<Props> = ({ blocks }) => {
         return (
           <Carousel
             key={index}
-            className="w-full h-[600px] flex flex-col gap-4 justify-center items-center border p-8 bg-my-gray"
+            className="w-full h-[600px] flex flex-col gap-4 justify-center items-center border p-8 "
           >
             {block.map((item, index) => {
               if (item.includes("mp4")) {

@@ -30,14 +30,17 @@ const IconsMenu = [
   {
     src: Email,
     alt: "Email",
+    link: "/contact",
   },
   {
     src: Flicker,
     alt: "Flicker",
+    link: "https://www.flickr.com/people/pocostales/",
   },
   {
     src: In,
     alt: "LinkedIn",
+    link: "https://www.linkedin.com/in/pablopocostales/",
   },
 ];
 
@@ -51,7 +54,7 @@ export const Footer = () => {
               className="w-[30px] h-[30px] rounded-full flex justify-center items-center transition-all hover:scale-110"
               key={index}
             >
-              <Link to={"/"}>
+              <Link to={item.link}>
                 <img src={item.src} alt={item.alt} className="w-full h-full" />
               </Link>
             </li>

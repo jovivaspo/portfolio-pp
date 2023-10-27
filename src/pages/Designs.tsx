@@ -15,8 +15,7 @@ const blocks: Block[] = [
     "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/header-design_r06ksg.png",
     "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/2019_FisioFit_Logo_PRI_RGB_uye9u2.jpg",
     "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/2019_FisioFit_Logo_SEC_CMYK_t2zgjz.jpg",
-    "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443524/portafolio-pp/IMG_6539_i145tm.jpg",
-    "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443524/portafolio-pp/IMG_6453_uafeth.jpg",
+    "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/IMG_6538_zpicyc.jpg",
     "https://res.cloudinary.com/dme5pqzrj/video/upload/f_auto/v1698443524/portafolio-pp/FF-publi_gttafy.mp4",
   ],
   [
@@ -40,7 +39,7 @@ export const Designs = () => {
       <Header
         position="0% 30%"
         text="Designs"
-        image="https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698424216/portafolio-pp/header-design_a2evi2.png"
+        image="https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/2019_FisioFit_Logo_PRI_RGB_uye9u2.jpg"
       />
       <GalleryWithSlide blocks={blocks} />
     </>
