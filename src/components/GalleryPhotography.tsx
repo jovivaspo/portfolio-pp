@@ -4,7 +4,7 @@ import Meteora from "../assets/images/meteora.jpg";
 import FreeGeorgia from "../assets/images/Georgia.jpg";
 import Greek from "../assets/images/Greek.jpg";
 import LLorx from "../assets/images/Llorx.jpg";
-import { ButtonSeeMore } from "./ButtonSeeMore";
+//import { ButtonSeeMore } from "./ButtonSeeMore";
 
 const items = [
   {
