@@ -15,9 +15,9 @@
 	z-index: 9999;
 }
 
-/*.image__overlay--blur {
+.image__overlay--blur {
 	backdrop-filter: blur(5px);
-}*/
+}
 
 
 
@@ -26,9 +26,9 @@
 	transition: transform 0.5s;
 }
 
-/*.image__overlay:hover {
+.image__overlay:hover {
 	opacity: 0;
-}*/
+}
 
 .image__overlay:hover>* {
 	transform: translateY(20px);

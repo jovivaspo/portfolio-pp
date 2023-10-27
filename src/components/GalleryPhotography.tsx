@@ -4,6 +4,7 @@ import Meteora from "../assets/images/meteora.jpg";
 import FreeGeorgia from "../assets/images/Georgia.jpg";
 import Greek from "../assets/images/Greek.jpg";
 import LLorx from "../assets/images/Llorx.jpg";
+import { ButtonSeeMore } from "./ButtonSeeMore";
 
 const items = [
   {
@@ -41,7 +42,7 @@ const items = [
 export const GalleryPhotography = () => {
   return (
     <>
-      <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 mt-36 mb-32 w-[90%] lg:w-[80%] justify-center">
+      <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 mt-36 mb-24 w-[90%] lg:w-[80%] justify-center">
         {items.map((item, index) => {
           return (
             <a
@@ -61,15 +62,12 @@ export const GalleryPhotography = () => {
           );
         })}
       </div>
-      <p className="text-center italic text-my-gray font-semibold mb-16">
-        You can see more photos here:{" "}
-        <a
-          className="hover:text-black"
-          href="https://www.flickr.com/people/pocostales/"
-        >
-          flickr
-        </a>
-      </p>
+      <div className="w-full flex justify-center mb-24">
+        {" "}
+        {/*<ButtonSeeMore />*/}
+      </div>
     </>
   );
 };
+
+//"https://www.flickr.com/people/pocostales/"
