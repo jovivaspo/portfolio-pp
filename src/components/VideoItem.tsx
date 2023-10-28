@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { VideoI } from "../types/types";
 import { Link } from "react-router-dom";
-import "../assets/styles/ImageOverlay.css"
+import "../assets/styles/ImageOverlay.css";
 
 type VideoItem = {
   item: VideoI;
@@ -41,30 +41,38 @@ export const VideoItem = (props: VideoItem) => {
     return (
       <Link
         to={link}
-        className={"relative w-full m-2 md:m-0 min-h-[260px] md:w-2/3 lg:w-[40%]"}
+        className={
+          "relative w-full m-2 md:m-0 min-h-[260px] md:w-2/3 lg:w-[40%]"
+        }
       >
-        <div  className={" w-full h-full"} ref={videoRef}>
+        <div className={" w-full h-full"} ref={videoRef}>
           <div className="image__overlay">
-            <h3 className="text-4xl text-white font-thin">
+            <h3 className=" text-white font-thin text-3xl md:text-4xl">
               {text?.toLocaleUpperCase()}
             </h3>
           </div>
-          {<video muted loop className="w-full h-full object-cover">
-            <source src={src} type="video/mp4" />
-          </video>}
+          {
+            <video muted loop className="w-full h-full object-cover">
+              <source src={src} type="video/mp4" />
+            </video>
+          }
         </div>
       </Link>
     );
   }
   return (
-    <div className={"relative m-2 md:m-0 w-full min-h-[260px] h-full"} ref={videoRef}>
-      <div className="image__overlay"
-      style={{
-        backgroundImage: thumbnail ? `url(${thumbnail})` : "",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+    <div
+      className={"relative m-2 md:m-0 w-full min-h-[260px] h-full"}
+      ref={videoRef}
+    >
+      <div
+        className="image__overlay"
+        style={{
+          backgroundImage: thumbnail ? `url(${thumbnail})` : "",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         <h3 className="text-4xl text-white font-thin">
           {text?.toLocaleUpperCase()}

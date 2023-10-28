@@ -71,7 +71,6 @@ export const Navbar = () => {
                       return (
                         <li key={index} className="p-2">
                           <Link
-                            target="_blank"
                             className="text-xs p-2 text-my-gray md:text-white hover:opacity-50 transition-all"
                             to={item.path}
                             onClick={handleMenu}

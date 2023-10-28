@@ -54,7 +54,7 @@ export const Footer = () => {
               className="w-[30px] h-[30px] rounded-full flex justify-center items-center transition-all hover:scale-110"
               key={index}
             >
-              <Link to={item.link}>
+              <Link to={item.link} target="_blank">
                 <img src={item.src} alt={item.alt} className="w-full h-full" />
               </Link>
             </li>

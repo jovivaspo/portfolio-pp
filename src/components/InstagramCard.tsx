@@ -15,7 +15,7 @@ export const InstagramCard: React.FC<Props> = ({ link, src }) => {
       >
         <p className="text-white font-bold">See on Instagram</p>
       </a>
-      <div className="bg-white border rounded-sm max-w-md">
+      <div className="bg-white border rounded-sm max-w-md min-w-[286px] min-h-[263px] md:min-w-[448px] md:min-h-[354px]">
         <div className="flex items-center px-4 py-3">
           <img
             loading="lazy"
@@ -31,7 +31,7 @@ export const InstagramCard: React.FC<Props> = ({ link, src }) => {
             </span>
           </div>
         </div>
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" className="w-full h-full bg-my-gray">
           {" "}
           <img src={src} loading="lazy" />
         </a>

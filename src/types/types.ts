@@ -24,4 +24,7 @@ export interface VideoRevI {
   subTitle?: string
 }
 
-export type Block = string[]
+export interface Block  {
+  title:string,
+  items: string[]
+}

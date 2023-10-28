@@ -36,8 +36,8 @@ export const Form = () => {
         throw new Error();
       }
 
-      /*const resp = await fetch(
-        "https://formsubmit.co/ajax/contact.unlimitedjerseys@gmail.com",
+      const resp = await fetch(
+        "https://formsubmit.co/ajax/Pocostales7@gmail.com",
         {
           method: "POST",
           headers: {
@@ -57,13 +57,13 @@ export const Form = () => {
       if (data) {
         alert("Thank you for your message!");
         setForm(initForm);
-      }*/
-      setTimeout(() => {
+      }
+      /*setTimeout(() => {
         alert(
           "Thank you for your message! We will get back to you as soon as possible."
         );
         setIsSubmit(false);
-      }, 1000);
+      }, 1000);*/
     } catch (e) {
       if (!form.email || !form.message || !form.name) {
         setError(true);
@@ -75,6 +75,7 @@ export const Form = () => {
           "Sorry, there was an error sending your message. Please try again."
         );
       }
+    } finally {
       setIsSubmit(false);
     }
   };

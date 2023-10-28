@@ -70,7 +70,7 @@ export const Colab = () => {
           </p>
           <p className="text-center text-my-gray">
             External collaboration taking on a supporting role in these
-            audiovisual projects{" "}
+            audiovisual projects.{" "}
           </p>
         </div>
         <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 md:gap-24 mt-24 w-[90%] lg:w-[80%] justify-center">
@@ -86,7 +86,7 @@ export const Colab = () => {
           <p className="text-center text-my-gray">
             Selection of the best videos created in collaboration with the
             Deloitte Brand and Content team. My contribution as film maker,
-            video editor and motion designer
+            video editor and motion designer.
           </p>
         </div>
         <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 md:gap-24 mt-24 w-[90%] lg:w-[80%] justify-center">
@@ -96,12 +96,11 @@ export const Colab = () => {
         </div>
         <div className="my-2 flex flex-col gap-2 mt-32 px-8">
           <p className="text-center">
-            <b>Instagram</b>
+            <b>DELOITTE - INSTAGRAM</b>
           </p>
           <p className="text-center text-my-gray">
-            Selection of the best videos created in collaboration with the
-            Deloitte Brand and Content team. My contribution as film maker,
-            video editor and motion designer
+            Samples of social media content created in collaboration with the
+            Deloitte Brand and Content team.
           </p>
         </div>
         <div className="flex w-full justify-center px-8 lg:w-[90%] 2xl:[80%] gap-16 flex-wrap mt-24">
