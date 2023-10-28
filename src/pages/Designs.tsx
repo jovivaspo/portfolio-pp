@@ -4,7 +4,9 @@ import { GalleryWithSlide } from "../components/GalleryWithSlide";
 
 const blocks: Block[] = [
   {
-    title: "FINCAS MORENO",
+    title: "Fincas Moreno",
+    description:
+      "Administration and management of properties and neighborhood communities",
     items: [
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443124/portafolio-pp/Fincas_Moreno_szva79.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443125/portafolio-pp/IMG_5635_yunzvv.jpg",
@@ -15,7 +17,8 @@ const blocks: Block[] = [
     ],
   },
   {
-    title: "FISIOFIT CENTER",
+    title: "FisioFit Center",
+    description: "Advanced sports physiotherapy center",
     items: [
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/header-design_r06ksg.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/2019_FisioFit_Logo_PRI_RGB_uye9u2.jpg",
@@ -27,16 +30,18 @@ const blocks: Block[] = [
 
   {
     title: "KINDOI",
+    description: "Brand identity",
     items: [
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/v1698443990/portafolio-pp/Kindoi_Identidad_Corporativa_iutwes.png",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121302_madbzh.png",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121302_madbzh.png",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121500_j5wecj.png",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/v1698443992/portafolio-pp/Captura_de_pantalla_2023-10-27_121413_kphtwf.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443990/portafolio-pp/Kindoi_Identidad_Corporativa_iutwes.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121302_madbzh.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121302_madbzh.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121500_j5wecj.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443992/portafolio-pp/Captura_de_pantalla_2023-10-27_121413_kphtwf.png",
     ],
   },
   {
-    title: "LA GIRALDA",
+    title: "Taberna La Giralda",
+    description: "Bar and Restaurant",
     items: [
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698444186/portafolio-pp/La_Gitana_y_El_Toro_pcdgwh.jpg",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698444187/portafolio-pp/dc9269f1-6d4a-4426-b69e-188c0584a7e3_nfqhb4.jpg",

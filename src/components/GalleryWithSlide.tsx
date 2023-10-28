@@ -10,17 +10,18 @@ interface Props {
 
 export const GalleryWithSlide: React.FC<Props> = ({ blocks }) => {
   return (
-    <div className="mx-auto flex flex-col sm:grid grid-cols-2 gap-16 mt-36 mb-24 w-[90%] lg:w-[80%] justify-center">
+    <div className="mx-auto flex flex-col xl:grid grid-cols-2  gap-16  xl:gap-32 mt-36 mb-24 w-[90%]  lg:w-[80%] justify-center">
       {blocks.map((block, index) => {
         return (
           <div className="flex flex-col gap-4">
-            <h3>{block.title}</h3>
+            <h3 className="font-bold text-md">{block.title}</h3>
+            <h6 className=" text-sm">{block.description}</h6>
             <Carousel
               dynamicHeight={false}
               showStatus={false}
               showThumbs={false}
               key={index}
-              className="relative w-full flex flex-col gap-4 justify-center items-center max-h-[500px]"
+              className="relative w-full flex flex-col gap-4 justify-center items-center h-[300px] md:h-[380px] lg:h-[414px]"
               renderArrowPrev={(clickHandler, hasPrev) => {
                 return (
                   <div
@@ -76,7 +77,7 @@ export const GalleryWithSlide: React.FC<Props> = ({ blocks }) => {
               {block.items.map((item, index) => {
                 if (item.includes("mp4")) {
                   return (
-                    <div className="w-full h-full max-h-[500px]">
+                    <div className="w-full h-full ">
                       <video
                         key={index}
                         src={item}
@@ -87,12 +88,12 @@ export const GalleryWithSlide: React.FC<Props> = ({ blocks }) => {
                   );
                 }
                 return (
-                  <div className="w-full h-full max-h-[500px]">
+                  <div className="w-full h-full ">
                     <img
                       key={index}
                       src={item}
                       loading="lazy"
-                      className="w-full h-full  object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 );
