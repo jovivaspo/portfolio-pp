@@ -21,6 +21,16 @@ export const LogoAnimated = () => {
   const [mouseOut, setMouseOut] = useState(true);
 
   useEffect(() => {
+    if (!videoRef.current || !mouseOut || isMobile || isPlaying) return;
+
+    const $img = videoRef?.current.querySelector("img");
+    if ($img) {
+      $img.classList.remove("opacity-0");
+      $img.classList.add("opacity-100");
+    }
+  }, [mouseOut, isPlaying]);
+
+  useEffect(() => {
     //Change video to change index of the list
     setVideo(listOfVideos[videosIndex]);
   }, [videosIndex]);
@@ -34,7 +44,11 @@ export const LogoAnimated = () => {
   const playVideoDesktop = () => {
     if (!videoRef.current || isMobile) return;
     const $video = videoRef?.current.querySelector("video");
-
+    const $img = videoRef?.current.querySelector("img");
+    if ($img) {
+      $img.classList.remove("opacity-100");
+      $img.classList.add("opacity-0");
+    }
     if (!$video || isPlaying) return;
     setMouseOut(false);
     $video.play();
@@ -81,18 +95,17 @@ export const LogoAnimated = () => {
       className={"relative m-2 w-[140px] z-0 overflow-hidden ml-[11px]"}
       ref={videoRef}
       onMouseEnter={() => playVideoDesktop()}
-      onMouseLeave={() => setMouseOut(true)}
+      onMouseLeave={() => {
+        setMouseOut(true);
+      }}
     >
-      <div
-        className="image__overlay w-full"
-        style={{
-          backgroundImage: `url(${Logo})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "transparent",
-        }}
-      ></div>
+      <div className="image__overlay w-full">
+        <img
+          src={Logo}
+          alt="Logo"
+          className="opacity-100 w-full h-full object-cover bg-transparent"
+        />
+      </div>
 
       <video muted className="w-full h-full object-cover" key={videosIndex}>
         {video && <source src={video} type="video/mp4" />}
