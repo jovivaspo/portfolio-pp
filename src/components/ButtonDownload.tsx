@@ -3,7 +3,7 @@ import "../assets/styles/ButtonDownload.css";
 export const ButtonDownload = () => {
   return (
     <button className="btn-download">
-      <p>See more here...</p>
+      <p>Download here...</p>
     </button>
   );
 };
