@@ -14,8 +14,8 @@ const menuItems = [
 ];
 
 const subMenuItemsMyWorks = [
-  { name: "Photography", path: "photography" },
   { name: "Videography", path: "videography" },
+  { name: "Photography", path: "photography" },
   { name: "Feat/Colab", path: "colab" },
   { name: "Designs", path: "designs" },
 ];

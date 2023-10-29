@@ -10,7 +10,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	
+	background-color: black;
+	opacity: 0.5;
 	transition: opacity 1s;
 	z-index: 9999;
 }
@@ -26,10 +27,10 @@
 	transition: transform 0.5s;
 }
 
-/*.image__overlay:hover {
+.image__overlay:hover {
 	opacity: 0;
 }
 
 .image__overlay:hover>* {
 	transform: translateY(20px);
-}*/
+}

@@ -59,7 +59,7 @@ export const Colab = () => {
     <>
       <Header
         position="0% 50%"
-        text="Colab/Featured"
+        text="Feat/Collaboration"
         image="https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/t_header-feat-collaboration-crop/v1698424080/portafolio-pp/header-feat-collaboration_zahc6o.jpg"
       />
 

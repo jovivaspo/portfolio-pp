@@ -48,6 +48,7 @@ export const GalleryPhotography = () => {
           return (
             <a
               key={index}
+              target="_blank"
               href={item.href}
               className=" w-full h-full flex flex-col gap-4 justify-center items-center"
             >

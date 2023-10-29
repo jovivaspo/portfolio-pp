@@ -5,6 +5,7 @@ import LogoAnimationBubbles from "../assets/animations/PP-Bubbles_1.mp4";
 import LogoAnimationWatter from "../assets/animations/PP_ColorWater_1.mp4";
 import useIsMobile from "../hooks/useMobile";
 import { Link } from "react-router-dom";
+import "../assets/styles/LogoAnimated.css";
 
 const listOfVideos = [
   LogoAnimationWatter,
@@ -99,7 +100,7 @@ export const LogoAnimated = () => {
         setMouseOut(true);
       }}
     >
-      <div className="image__overlay w-full">
+      <div className="image__overlay_logo w-full">
         <img
           src={Logo}
           alt="Logo"

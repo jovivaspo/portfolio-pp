@@ -53,7 +53,12 @@ export const About = () => {
           );
         })}
       </div>
-      <a href="./port2.pdf" target="_blank" rel="noopener noreferrer" download>
+      <a
+        href="./CV-Pablo-Pocostales-2023.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+      >
         <ButtonDownload />
       </a>
     </div>
