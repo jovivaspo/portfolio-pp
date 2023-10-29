@@ -23,6 +23,5 @@ export const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
     </Route>
-  ),
-  { basename: "/portfolio-pp" }
+  )
 );
