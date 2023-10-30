@@ -1,6 +1,6 @@
 import {
   Route,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
 } from "react-router-dom";
 import { Home } from "../pages/Home";
@@ -12,7 +12,7 @@ import { Colab } from "../pages/Colab";
 import { Contact } from "../pages/Contact";
 import { Designs } from "../pages/Designs";
 
-export const router = createBrowserRouter(
+export const router = createHashRouter(
   createRoutesFromElements(
     <Route element={<Layout />}>
       <Route path="/" element={<Home />} />

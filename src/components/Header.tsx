@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({
   const { size } = useSizeScreen();
   return (
     <header className="relative h-[400px] bg-my-gray">
-      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-4xl md:text-5xl text-white font-bold z-20">
+      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-3xl md:text-5xl text-white font-bold z-20">
         {text?.toUpperCase()}
       </h2>
       {image ? (
