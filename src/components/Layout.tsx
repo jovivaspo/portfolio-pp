@@ -1,4 +1,4 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
@@ -10,7 +10,6 @@ export const Layout = () => {
       <div className="mt-24 md:mt-32">
         <Footer />
       </div>
-      <ScrollRestoration />
     </>
   );
 };
