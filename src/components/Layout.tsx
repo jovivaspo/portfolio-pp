@@ -1,16 +1,18 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
-export const Layout = () => {
+interface Props {
+  children: React.ReactNode;
+}
+
+export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <Outlet />
+      {children}
       <div className="mt-24 md:mt-32">
         <Footer />
       </div>
-      <ScrollRestoration />
     </>
   );
 };

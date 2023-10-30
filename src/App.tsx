@@ -1,15 +1,15 @@
-
-import { RouterProvider } from 'react-router-dom'
-import { router } from './router/AppRouter'
+import { BrowserRouter } from "react-router-dom";
+import { Layout } from "./components/Layout";
+import { AppRouter } from "./router/AppRouter";
 
 function App() {
-  
-
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  )
+    <BrowserRouter>
+      <Layout>
+        <AppRouter />
+      </Layout>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

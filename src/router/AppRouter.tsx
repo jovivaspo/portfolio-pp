@@ -1,10 +1,5 @@
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { Layout } from "../components/Layout";
 import { Videography } from "../pages/Videography";
 import { About } from "../pages/About";
 import { Photography } from "../pages/Photography";
@@ -12,9 +7,9 @@ import { Colab } from "../pages/Colab";
 import { Contact } from "../pages/Contact";
 import { Designs } from "../pages/Designs";
 
-export const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route element={<Layout />}>
+export const AppRouter = () => {
+  return (
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/videography" element={<Videography />} />
       <Route path="/photography" element={<Photography />} />
@@ -22,7 +17,7 @@ export const router = createBrowserRouter(
       <Route path="/designs" element={<Designs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
-    </Route>
-  ),
-  { basename: "/" }
-);
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
+  );
+};
