@@ -23,7 +23,7 @@ export const router = createHashRouter(
       <Route path="/designs" element={<Designs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
-      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/*" element={<Navigate to="/" />} />
     </Route>
   )
 );
