@@ -17,7 +17,7 @@ const menuFooter = [
     path: "/photography",
   },
   {
-    text: "Feat-Collaboration",
+    text: "Feat/Collaboration",
     path: "/colab",
   },
   {
@@ -35,7 +35,7 @@ const IconsMenu = [
   {
     src: Flicker,
     alt: "Flicker",
-    link: "https://www.flickr.com/people/pocostales/",
+    link: "https://www.flickr.com/photos/pocostales",
   },
   {
     src: In,

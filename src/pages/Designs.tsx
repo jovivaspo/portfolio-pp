@@ -28,7 +28,7 @@ const blocks: Block[] = [
 
   {
     title: "KINDOI",
-    description: "Brand identity",
+    description: "Travel itinerary generator",
     items: [
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443990/portafolio-pp/Kindoi_Identidad_Corporativa_iutwes.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121302_madbzh.png",
