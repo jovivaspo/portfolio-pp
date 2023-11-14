@@ -32,7 +32,6 @@ const blocks: Block[] = [
     items: [
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443990/portafolio-pp/Kindoi_Identidad_Corporativa_iutwes.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121302_madbzh.png",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121302_madbzh.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443991/portafolio-pp/Captura_de_pantalla_2023-10-27_121500_j5wecj.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443992/portafolio-pp/Captura_de_pantalla_2023-10-27_121413_kphtwf.png",
     ],

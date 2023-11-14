@@ -58,7 +58,7 @@ const items: VideoRevI[] = [
         />
       </div>
     ),
-    title: "Boda - Beatriz&JuanJo2019",
+    title: "WEDDING - BEATRIZ&JUANJO2019",
 
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751561/portafolio-pp/09_nb1nvm.png",
@@ -72,7 +72,7 @@ const items: VideoRevI[] = [
       </div>
     ),
     title:
-      "Selección Española - Eurocopa Balonmano Femenino Sub-17, Macedonia 2015",
+      "Spanish National Team - U17 Women's Handball Eurocup, Macedonia 2015",
 
     thumbnail:
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1696751559/portafolio-pp/05_gcpzpl.png",
