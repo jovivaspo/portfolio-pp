@@ -1,8 +1,8 @@
 import Bonne from '../assets/images/bonne.jpg';
 import FreeGeorgia from '../assets/images/Georgia.jpg';
 import Greek from '../assets/images/Greek.jpg';
-import Irlanda from '../assets/images/Irlanda.jpg';
 import Irlanda1 from '../assets/images/Irlanda-1.jpg';
+import Irlanda from '../assets/images/Irlanda.jpg';
 import Italy from '../assets/images/Italy.jpg';
 import LLorx from '../assets/images/LLorx.jpg';
 import Meteora from '../assets/images/Meteora.jpg';
@@ -23,16 +23,7 @@ const items = [
     src: Irlanda1,
     title: 'Ireland, 2025',
   },
-  {
-    href: 'https://www.flickr.com/photos/pocostales/53918163338/in/dateposted-public/',
-    src: Thailand,
-    title: 'Thailand, 2024',
-  },
-  {
-    href: 'https://www.flickr.com/photos/pocostales/53917023307/in/dateposted-public/',
-    src: Thailand1,
-    title: 'Thailand, 2024',
-  },
+
   {
     href: 'https://www.flickr.com/photos/pocostales/53918372780/in/dateposted-public/',
     src: Italy,
@@ -42,6 +33,16 @@ const items = [
     href: 'https://www.flickr.com/photos/pocostales/53917042917/in/dateposted-public/',
     src: Spain,
     title: 'Spain, 2024',
+  },
+  {
+    href: 'https://www.flickr.com/photos/pocostales/53918163338/in/dateposted-public/',
+    src: Thailand,
+    title: 'Thailand, 2023',
+  },
+  {
+    href: 'https://www.flickr.com/photos/pocostales/53917023307/in/dateposted-public/',
+    src: Thailand1,
+    title: 'Thailand, 2023',
   },
   {
     href: 'https://www.flickr.com/photos/pocostales/53107162640/in/dateposted-public/',
@@ -90,7 +91,7 @@ export const GalleryPhotography = () => {
       </div>
       <div className='w-full flex justify-center'>
         {' '}
-        <a href='https://www.flickr.com/people/pocostales/' target='_blank'>
+        <a href='https://www.flickr.com/photos/pocostales/' target='_blank'>
           {<ButtonSeeMore />}
         </a>
       </div>
