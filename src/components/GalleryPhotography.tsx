@@ -1,8 +1,8 @@
 import Bonne from '../assets/images/bonne.jpg';
 import FreeGeorgia from '../assets/images/Georgia.jpg';
 import Greek from '../assets/images/Greek.jpg';
-import Ireland from '../assets/images/Ireland.jpg';
-import Ireland1 from '../assets/images/Ireland-1.jpg';
+import Irlanda from '../assets/images/Irlanda.jpg';
+import Irlanda1 from '../assets/images/Irlanda-1.jpg';
 import Italy from '../assets/images/Italy.jpg';
 import LLorx from '../assets/images/LLorx.jpg';
 import Meteora from '../assets/images/Meteora.jpg';
@@ -15,12 +15,12 @@ import { ButtonSeeMore } from './ButtonSeeMore';
 const items = [
   {
     href: 'https://www.flickr.com/photos/pocostales/54490063770',
-    src: Ireland,
+    src: Irlanda,
     title: 'Ireland, 2025',
   },
   {
     href: 'https://www.flickr.com/photos/pocostales/54489905164',
-    src: Ireland1,
+    src: Irlanda1,
     title: 'Ireland, 2025',
   },
   {
