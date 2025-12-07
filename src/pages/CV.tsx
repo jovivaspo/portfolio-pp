@@ -35,59 +35,49 @@ export const CV = () => {
       <section className='mb-12'>
         <h3 className='text-xl font-bold mb-6 uppercase'>Experience</h3>
         <div className='space-y-6'>
-          <div>
-            <div className='flex flex-col md:flex-row md:gap-4 mb-2'>
-              <span className='text-black font-medium min-w-[140px]'>Nov 2018 - Present</span>
-              <div>
-                <p className='text-black font-medium'>Videographer & Multimedia Designer</p>
-                <p className='text-my-gray'>Deloitte // Luxembourg</p>
-              </div>
+          <div className='flex flex-col md:flex-row md:gap-4'>
+            <span className='text-black font-medium md:min-w-[140px] mb-2 md:mb-0'>Nov 2018 - Present</span>
+            <div className='flex-1'>
+              <p className='text-black font-medium'>Videographer & Multimedia Designer</p>
+              <p className='text-my-gray mb-2'>Deloitte // Luxembourg</p>
+              <p className='text-my-gray'>Video filming and editing for the branding department. Creation of motion design and promotional videos for social media.</p>
             </div>
-            <p className='text-my-gray md:ml-[156px]'>Video filming and editing for the branding department. Creation of motion design and promotional videos for social media.</p>
           </div>
 
-          <div>
-            <div className='flex flex-col md:flex-row md:gap-4 mb-2'>
-              <span className='text-black font-medium min-w-[140px]'>Apr 2017 - Nov 2018</span>
-              <div>
-                <p className='text-black font-medium'>Videographer & Graphic Designer</p>
-                <p className='text-my-gray'>Freelancer // Spain</p>
-              </div>
+          <div className='flex flex-col md:flex-row md:gap-4'>
+            <span className='text-black font-medium md:min-w-[140px] mb-2 md:mb-0'>Apr 2017 - Nov 2018</span>
+            <div className='flex-1'>
+              <p className='text-black font-medium'>Videographer & Graphic Designer</p>
+              <p className='text-my-gray mb-2'>Freelancer // Spain</p>
+              <p className='text-my-gray'>Video creation and editing, logo design and development, catalog layout for web pagination, and social media.</p>
             </div>
-            <p className='text-my-gray md:ml-[156px]'>Video creation and editing, logo design and development, catalog layout for web pagination, and social media.</p>
           </div>
 
-          <div>
-            <div className='flex flex-col md:flex-row md:gap-4 mb-2'>
-              <span className='text-black font-medium min-w-[140px]'>Mar 2013 - Apr 2016</span>
-              <div>
-                <p className='text-black font-medium'>Cameraman & Video Editor</p>
-                <p className='text-my-gray'>Alcor Extremadura Raid // Spain</p>
-              </div>
+          <div className='flex flex-col md:flex-row md:gap-4'>
+            <span className='text-black font-medium md:min-w-[140px] mb-2 md:mb-0'>Mar 2013 - Apr 2016</span>
+            <div className='flex-1'>
+              <p className='text-black font-medium'>Cameraman & Video Editor</p>
+              <p className='text-my-gray mb-2'>Alcor Extremadura Raid // Spain</p>
+              <p className='text-my-gray'>Recording and editing of promotional videos for social networks.</p>
             </div>
-            <p className='text-my-gray md:ml-[156px]'>Recording and editing of promotional videos for social networks.</p>
           </div>
 
-          <div>
-            <div className='flex flex-col md:flex-row md:gap-4 mb-2'>
-              <span className='text-black font-medium min-w-[140px]'>Nov 2011 - May 2012</span>
-              <div>
-                <p className='text-black font-medium'>Videographer & Production</p>
-                <p className='text-my-gray'>MediaUni Web - UV // Spain</p>
-              </div>
+          <div className='flex flex-col md:flex-row md:gap-4'>
+            <span className='text-black font-medium md:min-w-[140px] mb-2 md:mb-0'>Nov 2011 - May 2012</span>
+            <div className='flex-1'>
+              <p className='text-black font-medium'>Videographer & Production</p>
+              <p className='text-my-gray mb-2'>MediaUni Web - UV // Spain</p>
+              <p className='text-my-gray'>Cameraman, video editor, developer and creator of a Sport program for the university.</p>
             </div>
-            <p className='text-my-gray md:ml-[156px]'>Cameraman, video editor, developer and creator of a Sport program for the university.</p>
           </div>
 
-          <div>
-            <div className='flex flex-col md:flex-row md:gap-4 mb-2'>
-              <span className='text-black font-medium min-w-[140px]'>Jul 2011 - Sep 2011</span>
-              <div>
-                <p className='text-black font-medium'>Camera Assistant</p>
-                <p className='text-my-gray'>VAV Productions // Spain</p>
-              </div>
+          <div className='flex flex-col md:flex-row md:gap-4'>
+            <span className='text-black font-medium md:min-w-[140px] mb-2 md:mb-0'>Jul 2011 - Sep 2011</span>
+            <div className='flex-1'>
+              <p className='text-black font-medium'>Camera Assistant</p>
+              <p className='text-my-gray mb-2'>VAV Productions // Spain</p>
+              <p className='text-my-gray'>Camera assistant in a live program of Canal Extremadura TV.</p>
             </div>
-            <p className='text-my-gray md:ml-[156px]'>Camera assistant in a live program of Canal Extremadura TV.</p>
           </div>
         </div>
       </section>
