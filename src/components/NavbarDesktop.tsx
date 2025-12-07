@@ -15,7 +15,7 @@ export const NavbarDesktop = ({ navItemsLeft, navItemsRight }: NavbarDesktopProp
   const location = useLocation();
 
   return (
-    <nav className='w-full h-[80px] bg-white hidden md:flex items-center justify-between px-8'>
+    <nav className='relative w-full h-[80px] bg-white hidden md:flex items-center justify-between px-8'>
       {/* Left Navigation Items */}
       <ul className='flex items-center gap-6'>
         {navItemsLeft.map((item, index) => {
@@ -30,8 +30,8 @@ export const NavbarDesktop = ({ navItemsLeft, navItemsRight }: NavbarDesktopProp
         })}
       </ul>
 
-      {/* Center Logo */}
-      <div className='flex-shrink-0'>
+      {/* Center Logo - Absolutely Centered */}
+      <div className='absolute left-1/2 transform -translate-x-1/2'>
         <LogoAnimated />
       </div>
 
