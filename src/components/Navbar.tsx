@@ -10,6 +10,7 @@ export const NAV_ITEMS_LEFT = [
 
 export const NAV_ITEMS_RIGHT = [
   { name: 'Who I am', path: '/about' },
+  { name: 'CV', path: '/curriculum-vitae' },
   {
     name: 'My Gear',
     path: 'https://kit.co/pablopocostales/my-filming-equipment',
