@@ -6,13 +6,16 @@ const blocks: Block[] = [
   {
     title: "Fincas Moreno",
     description:
-      "Administration and management of properties and neighborhood communities",
+      "Administration of properties and neighborhood communities",
     items: [
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698578299/portafolio-pp/FincasMoreno_1920x1080px_fuyidw.jpg",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443125/portafolio-pp/IMG_5635_yunzvv.jpg",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443125/portafolio-pp/IMG_5636_000_g2vqte.jpg",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443125/portafolio-pp/IMG_5597_000_eapjyf.jpg",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443126/portafolio-pp/IMG_5596_001_am87mg.jpg",
+
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336028/2025_FM-logo_Black_lzqu9c.jpg",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336028/2025_FM-logo_White_a3tp5l.jpg",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336029/2025_FM-mockup_Business_Card_1_wjntjo.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336030/2025_FM-mockup_Business_Card_2_rl42ap.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336032/2025_FM-mockup_Envelope_n4mujv.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336036/2025_FM-mockup_Business_Card_3_iifkh6.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336052/2025_FM-mockup_Shopfront_stlcre.png"
     ],
   },
   {
