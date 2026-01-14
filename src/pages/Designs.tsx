@@ -8,14 +8,14 @@ const blocks: Block[] = [
     description:
       "Administration of properties and neighborhood communities",
     items: [
-
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336028/2025_FM-logo_Black_lzqu9c.jpg",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336052/2025_FM-mockup_Shopfront_stlcre.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336028/2025_FM-logo_White_a3tp5l.jpg",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336028/2025_FM-logo_Black_lzqu9c.jpg",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336029/2025_FM-mockup_Business_Card_1_wjntjo.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336030/2025_FM-mockup_Business_Card_2_rl42ap.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336032/2025_FM-mockup_Envelope_n4mujv.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336036/2025_FM-mockup_Business_Card_3_iifkh6.png",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336052/2025_FM-mockup_Shopfront_stlcre.png"
+      
     ],
   },
   {
@@ -23,8 +23,10 @@ const blocks: Block[] = [
     description: "Advanced sports physiotherapy center",
     items: [
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698578299/portafolio-pp/2019_FisioFit_1920x1080p_enfr5l.jpg",
-      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/header-design_r06ksg.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698578299/portafolio-pp/2019_FisioFit_1920x1080p_02_juldlo.jpg",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768420470/2026_Mockup-FisioFit_business_cards_01_tan38p.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768420470/2026_Mockup-FisioFit_business_cards_03_sd7ynj.png",
+      "https://res.cloudinary.com/dme5pqzrj/image/upload/v1768420470/2026_Mockup-FisioFit_business_cards_02_uevdeu.png",
       "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/c_crop,ar_16:9/v1698443523/portafolio-pp/IMG_6538_zpicyc.jpg",
     ],
   },

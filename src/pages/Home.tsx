@@ -26,7 +26,7 @@ const Items: (VideoI | ImageI)[] = [
   },
   {
     type: "image",
-    src: "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698424216/portafolio-pp/header-design_a2evi2.png",
+    src: "https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336030/2025_FM-mockup_Business_Card_2_rl42ap.png",
     text: "Designs",
     link: "designs",
   },
