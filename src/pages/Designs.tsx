@@ -59,7 +59,7 @@ export const Designs = () => {
       <Header
         position="0% 30%"
         text="Designs"
-        image="https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1698443523/portafolio-pp/2019_FisioFit_Logo_PRI_RGB_uye9u2.jpg"
+        image="https://res.cloudinary.com/dme5pqzrj/image/upload/f_auto/v1768336030/2025_FM-mockup_Business_Card_2_rl42ap.png"
       />
       <GalleryWithSlide blocks={blocks} />
     </>
